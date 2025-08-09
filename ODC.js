@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Ogame Defense Calculator
 // @namespace    https://tsuna.fr/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Give advice about ogame defense ratio optimization
 // @author       Tsuna
 // @license      GPLv3
 // @match        https://*.ogame.gameforge.com/game/index.php?page=ingame&component=defenses*
-// @updateURL    https://raw.githubusercontent.com/Tsuna77/Ogame-Defense-Calculator/refs/heads/main/ODC.js
+// @downloadURL  https://raw.githubusercontent.com/Tsuna77/Ogame-Defense-Calculator/refs/heads/main/ODC.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=gameforge.com
 // @grant        none
 // @run-at       document-end
