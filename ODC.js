@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Ogame Defense Calculator
 // @namespace    https://tsuna.fr/
-// @version      1.0.2
+// @version      1.0.3
 // @description  Give advice about ogame defense ratio optimization
 // @author       Tsuna
 // @license      GPLv3
@@ -28,6 +28,10 @@ const perma = {
     "shieldDomeLarge": 1
 };
 
+function clean_values(value){
+ return value.replace(".","");
+}
+
 (function() {
     'use strict';
 
@@ -43,7 +47,7 @@ const perma = {
         for (let element of rocketLauncherElements) {
             const stockAmountElement = element.querySelector(".stockAmount");
             if (stockAmountElement) {
-                rocketLauncherCount = parseInt(stockAmountElement.textContent);
+                rocketLauncherCount = parseInt(clean_values(stockAmountElement.textContent));
                 break;
             }
         }
@@ -56,7 +60,7 @@ const perma = {
             for (let element of elements) {
                 const stockAmountElement = element.querySelector(".stockAmount");
                 if (stockAmountElement) {
-                    count = parseInt(stockAmountElement.textContent);
+                    count = parseInt(clean_values(stockAmountElement.textContent));
                     const requiredCount = Math.floor(rocketLauncherCount / ratioValue);
                     const isSufficient = count >= requiredCount;
 
