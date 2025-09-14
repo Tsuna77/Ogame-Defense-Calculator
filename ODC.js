@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Ogame Defense Calculator
 // @namespace    https://tsuna.fr/
-// @version      1.0.3
+// @version      1.0.4
 // @description  Give advice about ogame defense ratio optimization
 // @author       Tsuna
 // @license      GPLv3
@@ -16,16 +16,16 @@
 const ratio = {
     "rocketLauncher": 1,
     "laserCannonHeavy": 3.33,
-    "gaussCannon": 13.99,
-    "plasmaCannon": 40,
-    "missileInterceptor": 50
+    "gaussCannon": 7,
+    "plasmaCannon": 20
 };
 
 const perma = {
     "laserCannonLight": 0,
     "ionCannon": 0,
     "shieldDomeSmall": 1,
-    "shieldDomeLarge": 1
+    "shieldDomeLarge": 1,
+    "missileInterceptor": 20
 };
 
 function clean_values(value){
